@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call Cards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main">
+
+    <!-- FORM MODAL -->
+    <div class="card-container">
+      <h2>New Call</h2>
+
+      <form id="noteForm">
+        <label class="label">Image URL:</label>
+        <input required id="image-url" class="input" />
+
+        <label class="label">Full Name:</label>
+        <input required id="full-name" class="input" />
+
+        <label class="label">Home Town:</label>
+        <input required id="home-town" class="input" />
+
+        <label class="label">Purpose:</label>
+        <input required id="purpose" class="input" />
+
+        <h4>Select Category:</h4>
+
+        <label class="category-option">
+          <span>Emergency</span>
+          <input type="radio" name="category" value="emergency" />
+        </label>
+
+        <label class="category-option">
+          <span>Important</span>
+          <input type="radio" name="category" value="important" />
+        </label>
+
+        <label class="category-option">
+          <span>Urgent</span>
+          <input type="radio" name="category" value="urgent" />
+        </label>
+
+        <label class="category-option">
+          <span>No rush</span>
+          <input type="radio" name="category" value="no-rush" />
+        </label>
+
+        <button class="create-btn">Create</button>
+        <button type="button" class="close-btn">Close</button>
+      </form>
+    </div>
+
+<div class="main-card-container">
+
+  <div class="controls">
+    <button class="control-btn" id="add-btn">+</button>
+    <button class="control-btn" id="moveUp">↑</button>
+    <button class="control-btn" id="moveDown">↓</button>
+  </div>
+
+  <!-- THIS WILL SHOW ONLY ONE CARD -->
+  <div id="cardsRoot"></div>
+
+</div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
